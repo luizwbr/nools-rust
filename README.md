@@ -2,12 +2,16 @@
 
 [![Crates.io](https://img.shields.io/crates/v/nools-rust.svg)](https://crates.io/crates/nools-rust)
 [![npm](https://img.shields.io/npm/v/nools-rust.svg)](https://www.npmjs.com/package/nools-rust)
+[![npm downloads](https://img.shields.io/npm/dm/nools-rust.svg)](https://www.npmjs.com/package/nools-rust)
 [![Documentation](https://docs.rs/nools-rust/badge.svg)](https://docs.rs/nools-rust)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://img.shields.io/badge/rust-2021-orange.svg)](https://www.rust-lang.org)
+[![WebAssembly](https://img.shields.io/badge/WebAssembly-enabled-blue.svg)](https://webassembly.org/)
 
 A modern Rust implementation of the Nools rules engine, based on the [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm).
 
-> **High-performance rules engine with type safety and memory safety guaranteed by Rust.**
+> **High-performance rules engine with type safety and memory safety guaranteed by Rust.**  
+> **Now with WebAssembly support for universal compatibility!**
 
 ## Features
 
@@ -72,6 +76,24 @@ This implementation focuses on:
 - Parallel rule evaluation (where applicable)
 
 ## Installation
+
+### Option 1: WebAssembly (Recommended) 🚀
+
+**Universal compatibility - works on all platforms!**
+
+```bash
+# Install from npm
+npm install nools-rust
+
+# Build from source
+npm run build
+```
+
+No compiler required! Just Node.js.
+
+See [`WASM-BUILD-GUIDE.md`](WASM-BUILD-GUIDE.md) for details.
+
+### Option 2: Native Rust
 
 ### From crates.io (Rust)
 

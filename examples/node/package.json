@@ -1,0 +1,18 @@
+{
+  "name": "nools-rust-examples",
+  "version": "1.0.0",
+  "description": "Examples for nools-rust Node.js bindings",
+  "private": true,
+  "scripts": {
+    "hello": "node hello_world.js",
+    "counter": "ts-node counter.ts"
+  },
+  "dependencies": {
+    "nools-rust": "file:../.."
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

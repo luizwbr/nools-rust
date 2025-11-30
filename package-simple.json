@@ -1,0 +1,46 @@
+{
+  "name": "nools-rust",
+  "version": "0.1.0",
+  "description": "A high-performance rules engine based on the Rete algorithm (Rust implementation)",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noolsjs/nools.git",
+    "directory": "rust"
+  },
+  "keywords": [
+    "rules",
+    "rules-engine",
+    "rete",
+    "expert-system",
+    "inference",
+    "rust",
+    "business-rules",
+    "drools"
+  ],
+  "author": "Luiz Felipe Weber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noolsjs/nools/issues"
+  },
+  "homepage": "https://github.com/noolsjs/nools/tree/master/rust#readme",
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src/**/*.rs",
+    "examples/**/*.rs",
+    "tests/**/*.rs",
+    "benches/**/*.rs",
+    "Cargo.toml",
+    "Cargo.lock",
+    "README.md",
+    "LICENSE",
+    "MIGRATION.md",
+    "QUICKSTART-PUBLISH.md"
+  ]
+}
