@@ -1,0 +1,47 @@
+{
+  "name": "nools-rust",
+  "version": "0.1.1",
+  "description": "A high-performance rules engine for Node.js based on the Rete algorithm (Rust implementation)",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noolsjs/nools.git",
+    "directory": "rust"
+  },
+  "keywords": [
+    "rules",
+    "rules-engine",
+    "rete",
+    "expert-system",
+    "inference",
+    "rust",
+    "napi",
+    "native",
+    "drools",
+    "business-rules"
+  ],
+  "author": "Luiz Felipe Weber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noolsjs/nools/issues"
+  },
+  "homepage": "https://github.com/noolsjs/nools/tree/master/rust#readme",
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "build": "wasm-pack build --target nodejs --out-dir pkg",
+    "build:web": "wasm-pack build --target web --out-dir pkg-web",
+    "build:bundler": "wasm-pack build --target bundler --out-dir pkg-bundler",
+    "build:all": "npm run build && npm run build:web && npm run build:bundler",
+    "test": "wasm-pack test --node",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "index.js",
+    "pkg/",
+    "README.md",
+    "LICENSE"
+  ]
+}

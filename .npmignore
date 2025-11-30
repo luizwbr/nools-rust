@@ -1,0 +1,44 @@
+# Rust source and build files (don't publish)
+src/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Development config files
+.cargo/
+rust-toolchain
+rustfmt.toml
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test and development files
+tests/
+benches/
+examples/node/
+build-simple.ps1
+publish.ps1
+publish-simple.ps1
+PUBLISHING-GUIDE.md
+
+# CI/CD
+.github/
+
+# We INCLUDE pkg/ (it's built by prepublishOnly script)
+# We INCLUDE index.js (entry point)
+# We INCLUDE README.md, LICENSE, package.json (automatically included)
