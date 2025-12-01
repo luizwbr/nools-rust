@@ -1,6 +1,6 @@
 {
   "name": "nools-rust",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A high-performance rules engine for Node.js based on the Rete algorithm (Rust implementation)",
   "main": "index.js",
   "types": "index.d.ts",

@@ -1,6 +1,6 @@
 [package]
 name = "nools-rust"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Luiz Felipe Weber"]
 description = "A rules engine for Rust based on the Rete algorithm"
