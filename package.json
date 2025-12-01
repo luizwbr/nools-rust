@@ -1,12 +1,12 @@
 {
   "name": "nools-rust",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "A high-performance rules engine for Node.js based on the Rete algorithm (Rust implementation)",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noolsjs/nools.git",
+    "url": "git+https://github.com/luizwbr/nools-rust.git",
     "directory": "rust"
   },
   "keywords": [
@@ -24,11 +24,11 @@
   "author": "Luiz Felipe Weber",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noolsjs/nools/issues"
+    "url": "https://github.com/luizwbr/nools-rust/issues"
   },
-  "homepage": "https://github.com/noolsjs/nools/tree/master/rust#readme",
+  "homepage": "https://github.com/luizwbr/nools-rust/tree/main?tab=readme-ov-file#nools-rust",
   "engines": {
-    "node": ">= 14"
+    "node": ">= 12.11.0"
   },
   "scripts": {
     "build": "wasm-pack build --target nodejs --out-dir pkg",
@@ -36,7 +36,7 @@
     "build:bundler": "wasm-pack build --target bundler --out-dir pkg-bundler",
     "build:all": "npm run build && npm run build:web && npm run build:bundler",
     "test": "wasm-pack test --node",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && node -e \"const fs = require('fs'); try { fs.unlinkSync('pkg/.gitignore'); } catch(e) {}\""
   },
   "files": [
     "index.js",

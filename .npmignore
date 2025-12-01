@@ -31,10 +31,6 @@ Thumbs.db
 tests/
 benches/
 examples/node/
-build-simple.ps1
-publish.ps1
-publish-simple.ps1
-PUBLISHING-GUIDE.md
 
 # CI/CD
 .github/
