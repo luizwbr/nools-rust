@@ -1,6 +1,6 @@
 {
   "name": "nools-rust",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A high-performance rules engine for Node.js based on the Rete algorithm (Rust implementation)",
   "main": "index.js",
   "types": "index.d.ts",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/luizwbr/nools-rust/tree/main?tab=readme-ov-file#nools-rust",
   "engines": {
-    "node": ">= 12.11.0"
+    "node": ">= 14.0.0"
   },
   "scripts": {
     "build": "wasm-pack build --target nodejs --out-dir pkg",
