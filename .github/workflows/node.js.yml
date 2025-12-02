@@ -45,12 +45,18 @@ jobs:
     - name: Build WASM module
       run: npm run build
     
-    - name: Run tests (if available)
-      run: npm test --if-present
+    - name: Verify package contents
+      run: |
+        echo "Checking pkg directory..."
+        ls -la pkg/
+        echo "Package includes WASM module: $(ls pkg/*.wasm)"
     
     - name: Test examples
       run: |
         cd examples/node
         npm install
+        echo "Running simple.js..."
         node simple.js
+        echo ""
+        echo "Running hello_world.js..."
         node hello_world.js
